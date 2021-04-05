@@ -8,17 +8,26 @@
 
 import UIKit
 
+//Step 1: create the protocol
+
+
 class BossVC: UIViewController {
     
+    // Step 2: create your delegate variable
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func newFeatureSelected(_ sender: Any) {
+        // Step 3 delegate method fired
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func bugFixSelected(_ sender: Any) {
+        // Step 3 delegate method fired
+
         dismiss(animated: true, completion: nil)
     }
 

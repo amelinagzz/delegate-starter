@@ -18,8 +18,12 @@ class InternVC: UIViewController {
 
     @IBAction func requestTask(_ sender: Any) {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossVC") as! BossVC
+        //Step 4: assign the delegate
+        
         present(bossVC, animated: true, completion: nil)
     }
     
 }
+
+//Step 5: Conform to the protocol 
 
